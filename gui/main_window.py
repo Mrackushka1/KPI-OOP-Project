@@ -1,6 +1,6 @@
 import customtkinter as tk
 
-from .frames import *
+from gui.frames import *
 
 
 class _MainWindow(tk.CTk):
@@ -10,6 +10,8 @@ class _MainWindow(tk.CTk):
         self._config_window()
         self._create_frames()
         self._place_frames()
+
+        self.current_game = None
 
     def _config_window(self):
         tk.set_default_color_theme("blue")
